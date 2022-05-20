@@ -40,23 +40,23 @@ import {
  * @throws {Error}
  */
 export function checkFieldNameRegex(fieldName: string) {
-    if (fieldName === '') return;
-    if (fieldName === '_id') return;
+    // if (fieldName === '') return;
+    // if (fieldName === '_id') return;
 
-    if (['properties', 'language'].includes(fieldName)) {
-        throw newRxError('SC23', {
-            fieldName
-        });
-    }
+    // if (['properties', 'language'].includes(fieldName)) {
+    //     throw newRxError('SC23', {
+    //         fieldName
+    //     });
+    // }
 
-    const regexStr = '^[a-zA-Z](?:[[a-zA-Z0-9_]*]?[a-zA-Z0-9])?$';
-    const regex = new RegExp(regexStr);
-    if (!fieldName.match(regex)) {
-        throw newRxError('SC1', {
-            regex: regexStr,
-            fieldName
-        });
-    }
+    // const regexStr = '^[a-zA-Z](?:[[a-zA-Z0-9_]*]?[a-zA-Z0-9])?$';
+    // const regex = new RegExp(regexStr);
+    // if (!fieldName.match(regex)) {
+    //     throw newRxError('SC1', {
+    //         regex: regexStr,
+    //         fieldName
+    //     });
+    // }
 }
 
 /**

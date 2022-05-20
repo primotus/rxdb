@@ -34,24 +34,24 @@ var _rxCollection = require("../rx-collection");
  * @throws {Error}
  */
 function checkFieldNameRegex(fieldName) {
-  if (fieldName === '') return;
-  if (fieldName === '_id') return;
+//   if (fieldName === '') return;
+//   if (fieldName === '_id') return;
 
-  if (['properties', 'language'].includes(fieldName)) {
-    throw (0, _rxError.newRxError)('SC23', {
-      fieldName: fieldName
-    });
-  }
+//   if (['properties', 'language'].includes(fieldName)) {
+//     throw (0, _rxError.newRxError)('SC23', {
+//       fieldName: fieldName
+//     });
+//   }
 
-  var regexStr = '^[a-zA-Z](?:[[a-zA-Z0-9_]*]?[a-zA-Z0-9])?$';
-  var regex = new RegExp(regexStr);
+//   var regexStr = '^[a-zA-Z](?:[[a-zA-Z0-9_]*]?[a-zA-Z0-9])?$';
+//   var regex = new RegExp(regexStr);
 
-  if (!fieldName.match(regex)) {
-    throw (0, _rxError.newRxError)('SC1', {
-      regex: regexStr,
-      fieldName: fieldName
-    });
-  }
+//   if (!fieldName.match(regex)) {
+//     throw (0, _rxError.newRxError)('SC1', {
+//       regex: regexStr,
+//       fieldName: fieldName
+//     });
+//   }
 }
 /**
  * validate that all schema-related things are ok
