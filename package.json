@@ -7,7 +7,6 @@
     "type": "git",
     "url": "https://github.com/pubkey/rxdb"
   },
-  "engines": { "node": "12.12.0"}, 
   "homepage": "https://rxdb.info/",
   "keywords": [
     "db",
