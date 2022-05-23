@@ -5,12 +5,13 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.basePrototype = void 0;
 exports.createRxDocumentConstructor = createRxDocumentConstructor;
-exports.defineGetterSetter = defineGetterSetter;
 exports.createWithConstructor = createWithConstructor;
-exports.properties = properties;
+exports["default"] = void 0;
+exports.defineGetterSetter = defineGetterSetter;
 exports.isInstanceOf = isInstanceOf;
-exports["default"] = exports.basePrototype = void 0;
+exports.properties = properties;
 
 var _objectPath = _interopRequireDefault(require("object-path"));
 

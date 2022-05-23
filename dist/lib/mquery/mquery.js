@@ -3,9 +3,9 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.createMQuery = createMQuery;
-exports.canMerge = canMerge;
 exports.MQueryBase = void 0;
+exports.canMerge = canMerge;
+exports.createMQuery = createMQuery;
 
 var _mquery_utils = require("./mquery_utils");
 
@@ -17,9 +17,7 @@ var _util = require("../util");
  * this is based on
  * @link https://github.com/aheckmann/mquery/blob/master/lib/mquery.js
  */
-var MQueryBase =
-/*#__PURE__*/
-function () {
+var MQueryBase = /*#__PURE__*/function () {
   /**
    * MQuery constructor used for building queries.
    *

@@ -5,28 +5,28 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-Object.defineProperty(exports, "QueryChangeDetector", {
-  enumerable: true,
-  get: function get() {
-    return _queryChangeDetector.QueryChangeDetector;
-  }
-});
 Object.defineProperty(exports, "PouchDB", {
   enumerable: true,
   get: function get() {
     return _pouchDb.PouchDB;
   }
 });
-Object.defineProperty(exports, "create", {
+Object.defineProperty(exports, "QueryChangeDetector", {
   enumerable: true,
   get: function get() {
-    return _rxDatabase.create;
+    return _queryChangeDetector.QueryChangeDetector;
   }
 });
-Object.defineProperty(exports, "removeDatabase", {
+Object.defineProperty(exports, "RxChangeEvent", {
   enumerable: true,
   get: function get() {
-    return _rxDatabase.removeDatabase;
+    return _rxChangeEvent.RxChangeEvent;
+  }
+});
+Object.defineProperty(exports, "RxSchema", {
+  enumerable: true,
+  get: function get() {
+    return _rxSchema.RxSchema;
   }
 });
 Object.defineProperty(exports, "checkAdapter", {
@@ -35,16 +35,10 @@ Object.defineProperty(exports, "checkAdapter", {
     return _rxDatabase.checkAdapter;
   }
 });
-Object.defineProperty(exports, "isRxDatabase", {
+Object.defineProperty(exports, "create", {
   enumerable: true,
   get: function get() {
-    return _rxDatabase.isInstanceOf;
-  }
-});
-Object.defineProperty(exports, "dbCount", {
-  enumerable: true,
-  get: function get() {
-    return _rxDatabase.dbCount;
+    return _rxDatabase.create;
   }
 });
 Object.defineProperty(exports, "createRxDatabase", {
@@ -53,10 +47,29 @@ Object.defineProperty(exports, "createRxDatabase", {
     return _rxDatabase.create;
   }
 });
+Object.defineProperty(exports, "createRxSchema", {
+  enumerable: true,
+  get: function get() {
+    return _rxSchema.createRxSchema;
+  }
+});
+Object.defineProperty(exports, "dbCount", {
+  enumerable: true,
+  get: function get() {
+    return _rxDatabase.dbCount;
+  }
+});
+exports["default"] = void 0;
 Object.defineProperty(exports, "isRxCollection", {
   enumerable: true,
   get: function get() {
     return _rxCollection.isInstanceOf;
+  }
+});
+Object.defineProperty(exports, "isRxDatabase", {
+  enumerable: true,
+  get: function get() {
+    return _rxDatabase.isInstanceOf;
   }
 });
 Object.defineProperty(exports, "isRxDocument", {
@@ -77,25 +90,13 @@ Object.defineProperty(exports, "isRxSchema", {
     return _rxSchema.isInstanceOf;
   }
 });
-Object.defineProperty(exports, "createRxSchema", {
+exports.plugin = void 0;
+Object.defineProperty(exports, "removeDatabase", {
   enumerable: true,
   get: function get() {
-    return _rxSchema.createRxSchema;
+    return _rxDatabase.removeDatabase;
   }
 });
-Object.defineProperty(exports, "RxSchema", {
-  enumerable: true,
-  get: function get() {
-    return _rxSchema.RxSchema;
-  }
-});
-Object.defineProperty(exports, "RxChangeEvent", {
-  enumerable: true,
-  get: function get() {
-    return _rxChangeEvent.RxChangeEvent;
-  }
-});
-exports["default"] = exports.plugin = void 0;
 
 var _queryChangeDetector = require("./query-change-detector");
 

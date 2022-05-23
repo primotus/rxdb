@@ -5,14 +5,15 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.sortCompareFunction = sortCompareFunction;
-exports._isSortedBefore = _isSortedBefore;
-exports._sortFieldChanged = _sortFieldChanged;
+exports.QueryChangeDetector = void 0;
 exports._getSortOptions = _getSortOptions;
 exports._isDocInResultData = _isDocInResultData;
-exports.enableDebugging = enableDebugging;
+exports._isSortedBefore = _isSortedBefore;
+exports._sortFieldChanged = _sortFieldChanged;
 exports.create = create;
-exports["default"] = exports.QueryChangeDetector = void 0;
+exports["default"] = void 0;
+exports.enableDebugging = enableDebugging;
+exports.sortCompareFunction = sortCompareFunction;
 
 var _pouchdbSelectorCore = require("pouchdb-selector-core");
 
@@ -32,9 +33,7 @@ var _util = require("./util");
  */
 var DEBUG = false;
 
-var QueryChangeDetector =
-/*#__PURE__*/
-function () {
+var QueryChangeDetector = /*#__PURE__*/function () {
   function QueryChangeDetector(query) {
     this.query = query;
     this.primaryKey = query.collection.schema.primaryPath;

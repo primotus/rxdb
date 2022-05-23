@@ -5,8 +5,9 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.Crypter = void 0;
 exports.create = create;
-exports["default"] = exports.Crypter = void 0;
+exports["default"] = void 0;
 
 var _objectPath = _interopRequireDefault(require("object-path"));
 
@@ -15,9 +16,7 @@ var _util = require("./util");
 /**
  * handle the en/decryption of documents-data
  */
-var Crypter =
-/*#__PURE__*/
-function () {
+var Crypter = /*#__PURE__*/function () {
   function Crypter(password, schema) {
     this.password = password;
     this.schema = schema;

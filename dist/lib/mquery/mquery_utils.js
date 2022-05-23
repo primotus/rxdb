@@ -3,9 +3,9 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.isObject = isObject;
 exports.merge = merge;
 exports.mergeClone = mergeClone;
-exports.isObject = isObject;
 
 var _util = require("../util");
 

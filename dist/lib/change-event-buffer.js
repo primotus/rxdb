@@ -3,16 +3,14 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.createChangeEventBuffer = createChangeEventBuffer;
 exports.ChangeEventBuffer = void 0;
+exports.createChangeEventBuffer = createChangeEventBuffer;
 
 /**
  * a buffer-cache which holds the last X changeEvents of the collection
  * TODO this could be optimized to only store the last event of one document
  */
-var ChangeEventBuffer =
-/*#__PURE__*/
-function () {
+var ChangeEventBuffer = /*#__PURE__*/function () {
   /**
    * array with changeEvents
    * starts with oldest known event, ends with newest

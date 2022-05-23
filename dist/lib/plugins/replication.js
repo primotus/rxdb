@@ -5,10 +5,11 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.setPouchEventEmitter = setPouchEventEmitter;
+exports.RxReplicationStateBase = void 0;
 exports.createRxReplicationState = createRxReplicationState;
+exports.rxdb = exports.prototypes = exports.hooks = exports["default"] = void 0;
+exports.setPouchEventEmitter = setPouchEventEmitter;
 exports.sync = sync;
-exports["default"] = exports.hooks = exports.prototypes = exports.rxdb = exports.RxReplicationStateBase = void 0;
 
 var _pouchdbReplication = _interopRequireDefault(require("pouchdb-replication"));
 
@@ -40,9 +41,7 @@ _core["default"].plugin(_watchForChanges["default"]);
 
 var INTERNAL_POUCHDBS = new WeakSet();
 
-var RxReplicationStateBase =
-/*#__PURE__*/
-function () {
+var RxReplicationStateBase = /*#__PURE__*/function () {
   function RxReplicationStateBase(collection) {
     var _this = this;
 

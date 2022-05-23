@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports["default"] = exports.hooks = exports.prototypes = exports.rxdb = void 0;
+exports.rxdb = exports.prototypes = exports.hooks = exports["default"] = void 0;
 
 /**
  * this plugin validates all documents

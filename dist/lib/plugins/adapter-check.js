@@ -3,8 +3,9 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.POUCHDB_LOCATION = void 0;
 exports.checkAdapter = checkAdapter;
-exports["default"] = exports.overwritable = exports.prototypes = exports.rxdb = exports.POUCHDB_LOCATION = void 0;
+exports.rxdb = exports.prototypes = exports.overwritable = exports["default"] = void 0;
 
 var _pouchDb = require("../pouch-db");
 

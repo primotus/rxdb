@@ -3,11 +3,11 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.getDocumentPrototype = getDocumentPrototype;
-exports.getRxDocumentConstructor = getRxDocumentConstructor;
 exports.createRxDocument = createRxDocument;
 exports.createRxDocuments = createRxDocuments;
 exports.getDocumentOrmPrototype = getDocumentOrmPrototype;
+exports.getDocumentPrototype = getDocumentPrototype;
+exports.getRxDocumentConstructor = getRxDocumentConstructor;
 
 var _rxDocument = require("./rx-document");
 

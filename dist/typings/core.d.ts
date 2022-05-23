@@ -3,6 +3,7 @@
  * it can be used as standalone but is also used in the batteries-included main-export
  */
 /// <reference types="pouchdb-core" />
+/// <reference types="pouchdb-adapter-memory" />
 import { QueryChangeDetector } from './query-change-detector';
 export { QueryChangeDetector } from './query-change-detector';
 import addPlugin from './plugin';

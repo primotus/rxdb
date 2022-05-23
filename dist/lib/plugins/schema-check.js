@@ -1,16 +1,14 @@
 "use strict";
 
-var _interopRequireWildcard = require("@babel/runtime/helpers/interopRequireWildcard");
-
 var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.checkFieldNameRegex = checkFieldNameRegex;
-exports.validateFieldsDeep = validateFieldsDeep;
 exports.checkSchema = checkSchema;
-exports["default"] = exports.hooks = exports.rxdb = void 0;
+exports.rxdb = exports.hooks = exports["default"] = void 0;
+exports.validateFieldsDeep = validateFieldsDeep;
 
 var _objectPath = _interopRequireDefault(require("object-path"));
 
@@ -21,6 +19,10 @@ var _rxError = require("../rx-error");
 var _rxSchema = require("../rx-schema");
 
 var _rxCollection = require("../rx-collection");
+
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 /**
  * does additional checks over the schema-json
@@ -33,25 +35,21 @@ var _rxCollection = require("../rx-collection");
  * and does not conquer the observe$ and populate_ fields
  * @throws {Error}
  */
-function checkFieldNameRegex(fieldName) {
-//   if (fieldName === '') return;
-//   if (fieldName === '_id') return;
-
-//   if (['properties', 'language'].includes(fieldName)) {
-//     throw (0, _rxError.newRxError)('SC23', {
-//       fieldName: fieldName
-//     });
-//   }
-
-//   var regexStr = '^[a-zA-Z](?:[[a-zA-Z0-9_]*]?[a-zA-Z0-9])?$';
-//   var regex = new RegExp(regexStr);
-
-//   if (!fieldName.match(regex)) {
-//     throw (0, _rxError.newRxError)('SC1', {
-//       regex: regexStr,
-//       fieldName: fieldName
-//     });
-//   }
+function checkFieldNameRegex(fieldName) {// if (fieldName === '') return;
+  // if (fieldName === '_id') return;
+  // if (['properties', 'language'].includes(fieldName)) {
+  //     throw newRxError('SC23', {
+  //         fieldName
+  //     });
+  // }
+  // const regexStr = '^[a-zA-Z](?:[[a-zA-Z0-9_]*]?[a-zA-Z0-9])?$';
+  // const regex = new RegExp(regexStr);
+  // if (!fieldName.match(regex)) {
+  //     throw newRxError('SC1', {
+  //         regex: regexStr,
+  //         fieldName
+  //     });
+  // }
 }
 /**
  * validate that all schema-related things are ok

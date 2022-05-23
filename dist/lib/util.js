@@ -5,29 +5,31 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.pluginMissing = pluginMissing;
-exports.fastUnsecureHash = fastUnsecureHash;
-exports.hash = hash;
-exports.generateId = generateId;
-exports.nextTick = nextTick;
-exports.promiseWait = promiseWait;
-exports.toPromise = toPromise;
-exports.requestIdlePromise = requestIdlePromise;
-exports.promiseSeries = promiseSeries;
-exports.requestIdleCallbackIfAvailable = requestIdleCallbackIfAvailable;
-exports.ucfirst = ucfirst;
-exports.numberToLetter = numberToLetter;
-exports.trimDots = trimDots;
-exports.sortObject = sortObject;
-exports.stringifyFilter = stringifyFilter;
-exports.randomCouchString = randomCouchString;
-exports.shuffleArray = shuffleArray;
-exports.removeOneFromArrayIfMatches = removeOneFromArrayIfMatches;
+exports.LOCAL_PREFIX = void 0;
 exports.adapterObject = adapterObject;
+exports.clone = void 0;
+exports.fastUnsecureHash = fastUnsecureHash;
 exports.flatClone = flatClone;
 exports.flattenObject = flattenObject;
+exports.generateId = generateId;
 exports.getHeightOfRevision = getHeightOfRevision;
-exports.LOCAL_PREFIX = exports.isElectronRenderer = exports.clone = void 0;
+exports.hash = hash;
+exports.isElectronRenderer = void 0;
+exports.nextTick = nextTick;
+exports.numberToLetter = numberToLetter;
+exports.pluginMissing = pluginMissing;
+exports.promiseSeries = promiseSeries;
+exports.promiseWait = promiseWait;
+exports.randomCouchString = randomCouchString;
+exports.removeOneFromArrayIfMatches = removeOneFromArrayIfMatches;
+exports.requestIdleCallbackIfAvailable = requestIdleCallbackIfAvailable;
+exports.requestIdlePromise = requestIdlePromise;
+exports.shuffleArray = shuffleArray;
+exports.sortObject = sortObject;
+exports.stringifyFilter = stringifyFilter;
+exports.toPromise = toPromise;
+exports.trimDots = trimDots;
+exports.ucfirst = ucfirst;
 
 var _randomToken = _interopRequireDefault(require("random-token"));
 

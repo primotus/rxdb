@@ -5,8 +5,9 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.KeyCompressor = void 0;
 exports.create = create;
-exports["default"] = exports.overwritable = exports.prototypes = exports.rxdb = exports.KeyCompressor = void 0;
+exports.rxdb = exports.prototypes = exports.overwritable = exports["default"] = void 0;
 
 var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));
 
@@ -16,9 +17,7 @@ var _util = require("../util");
  * this plugin adds the keycompression-capabilities to rxdb
  * if you dont use this, ensure that you set disableKeyComression to false in your schema
  */
-var KeyCompressor =
-/*#__PURE__*/
-function () {
+var KeyCompressor = /*#__PURE__*/function () {
   function KeyCompressor(schema) {
     this.schema = schema;
   }
@@ -44,14 +43,14 @@ function () {
       return _this._decompressObj(item);
     }); // object
     else {
-        var ret = {};
-        Object.keys(obj).forEach(function (key) {
-          var replacedKey = key;
-          if ((key.startsWith('|') || key.startsWith('_')) && reverseTable[key]) replacedKey = reverseTable[key];
-          ret[replacedKey] = _this._decompressObj(obj[key]);
-        });
-        return ret;
-      }
+      var ret = {};
+      Object.keys(obj).forEach(function (key) {
+        var replacedKey = key;
+        if ((key.startsWith('|') || key.startsWith('_')) && reverseTable[key]) replacedKey = reverseTable[key];
+        ret[replacedKey] = _this._decompressObj(obj[key]);
+      });
+      return ret;
+    }
   };
 
   _proto.decompress = function decompress(obj) {

@@ -5,19 +5,20 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.properties = properties;
-exports._preparePasswordHash = _preparePasswordHash;
-exports._ensureStorageTokenExists = _ensureStorageTokenExists;
-exports.writeToSocket = writeToSocket;
+exports.RxDatabaseBase = void 0;
 exports._collectionNamePrimary = _collectionNamePrimary;
+exports._ensureStorageTokenExists = _ensureStorageTokenExists;
+exports._preparePasswordHash = _preparePasswordHash;
 exports._removeAllOfCollection = _removeAllOfCollection;
-exports.create = create;
-exports.getPouchLocation = getPouchLocation;
-exports.removeDatabase = removeDatabase;
 exports.checkAdapter = checkAdapter;
-exports.isInstanceOf = isInstanceOf;
+exports.create = create;
 exports.dbCount = dbCount;
-exports["default"] = exports.RxDatabaseBase = void 0;
+exports["default"] = void 0;
+exports.getPouchLocation = getPouchLocation;
+exports.isInstanceOf = isInstanceOf;
+exports.properties = properties;
+exports.removeDatabase = removeDatabase;
+exports.writeToSocket = writeToSocket;
 
 var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));
 
@@ -55,9 +56,7 @@ var _rxCollection = require("./rx-collection");
 var USED_COMBINATIONS = {};
 var DB_COUNT = 0;
 
-var RxDatabaseBase =
-/*#__PURE__*/
-function () {
+var RxDatabaseBase = /*#__PURE__*/function () {
   function RxDatabaseBase(name, adapter, password, multiInstance) {
     var queryChangeDetection = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : false;
     var options = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : {};

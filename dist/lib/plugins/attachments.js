@@ -3,13 +3,17 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.fromPouchDocument = fromPouchDocument;
-exports.putAttachment = putAttachment;
-exports.getAttachment = getAttachment;
+exports.RxAttachment = void 0;
 exports.allAttachments = allAttachments;
-exports.preMigrateDocument = preMigrateDocument;
+exports["default"] = exports.blobBufferUtil = void 0;
+exports.fromPouchDocument = fromPouchDocument;
+exports.getAttachment = getAttachment;
+exports.overwritable = exports.hooks = void 0;
 exports.postMigrateDocument = postMigrateDocument;
-exports["default"] = exports.hooks = exports.overwritable = exports.prototypes = exports.rxdb = exports.RxAttachment = exports.blobBufferUtil = void 0;
+exports.preMigrateDocument = preMigrateDocument;
+exports.prototypes = void 0;
+exports.putAttachment = putAttachment;
+exports.rxdb = void 0;
 
 var _operators = require("rxjs/operators");
 
@@ -116,9 +120,7 @@ var _assignMethodsToAttachment = function _assignMethodsToAttachment(attachment)
  */
 
 
-var RxAttachment =
-/*#__PURE__*/
-function () {
+var RxAttachment = /*#__PURE__*/function () {
   function RxAttachment(_ref2) {
     var doc = _ref2.doc,
         id = _ref2.id,

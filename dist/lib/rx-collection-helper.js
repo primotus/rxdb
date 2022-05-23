@@ -3,8 +3,8 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports._handleToPouch = _handleToPouch;
 exports._handleFromPouch = _handleFromPouch;
+exports._handleToPouch = _handleToPouch;
 exports.fillObjectDataBeforeInsert = fillObjectDataBeforeInsert;
 
 var _util = require("./util");

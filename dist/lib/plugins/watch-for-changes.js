@@ -3,8 +3,8 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.rxdb = exports.prototypes = exports["default"] = void 0;
 exports.watchForChanges = watchForChanges;
-exports["default"] = exports.prototypes = exports.rxdb = void 0;
 
 var _rxjs = require("rxjs");
 

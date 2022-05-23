@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports["default"] = exports.overwritable = exports.prototypes = exports.rxdb = void 0;
+exports.rxdb = exports.prototypes = exports.overwritable = exports["default"] = void 0;
 
 /**
  * this plugin adds the error-messages

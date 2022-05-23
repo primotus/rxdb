@@ -1,4 +1,5 @@
 /// <reference types="pouchdb-core" />
+/// <reference types="pouchdb-adapter-memory" />
 import { PouchDBInstance } from './types';
 /**
  * get the number of all undeleted documents

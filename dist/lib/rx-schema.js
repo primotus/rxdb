@@ -5,16 +5,16 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.getEncryptedPaths = getEncryptedPaths;
-exports.hasCrypt = hasCrypt;
-exports.getIndexes = getIndexes;
-exports.getPrimary = getPrimary;
-exports.getPreviousVersions = getPreviousVersions;
-exports.getFinalFields = getFinalFields;
-exports.normalize = normalize;
-exports.createRxSchema = createRxSchema;
-exports.isInstanceOf = isInstanceOf;
 exports.RxSchema = void 0;
+exports.createRxSchema = createRxSchema;
+exports.getEncryptedPaths = getEncryptedPaths;
+exports.getFinalFields = getFinalFields;
+exports.getIndexes = getIndexes;
+exports.getPreviousVersions = getPreviousVersions;
+exports.getPrimary = getPrimary;
+exports.hasCrypt = hasCrypt;
+exports.isInstanceOf = isInstanceOf;
+exports.normalize = normalize;
 
 var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));
 
@@ -30,9 +30,7 @@ var _hooks = require("./hooks");
 
 var _rxDocument = require("./rx-document");
 
-var RxSchema =
-/*#__PURE__*/
-function () {
+var RxSchema = /*#__PURE__*/function () {
   function RxSchema(jsonID) {
     this.jsonID = jsonID;
     this.compoundIndexes = this.jsonID.compoundIndexes;

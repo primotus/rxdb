@@ -127,7 +127,7 @@ export function spawnServer(
     }
 
     return {
-        app,
+        app: <any> app,
         server
     };
 }

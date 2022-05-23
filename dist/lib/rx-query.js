@@ -5,9 +5,9 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.RxQueryBase = void 0;
 exports.createRxQuery = createRxQuery;
 exports.isInstanceOf = isInstanceOf;
-exports.RxQueryBase = void 0;
 
 var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));
 
@@ -37,9 +37,7 @@ var newQueryID = function newQueryID() {
   return ++_queryCount;
 };
 
-var RxQueryBase =
-/*#__PURE__*/
-function () {
+var RxQueryBase = /*#__PURE__*/function () {
   function RxQueryBase(op, queryObj, collection) {
     this.id = newQueryID();
     this._latestChangeEvent = -1;

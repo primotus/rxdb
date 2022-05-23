@@ -5,9 +5,7 @@ import _createClass from "@babel/runtime/helpers/createClass";
  * if you dont use this, ensure that you set disableKeyComression to false in your schema
  */
 import { numberToLetter, trimDots, clone } from '../util';
-export var KeyCompressor =
-/*#__PURE__*/
-function () {
+export var KeyCompressor = /*#__PURE__*/function () {
   function KeyCompressor(schema) {
     this.schema = schema;
   }
@@ -33,14 +31,14 @@ function () {
       return _this._decompressObj(item);
     }); // object
     else {
-        var ret = {};
-        Object.keys(obj).forEach(function (key) {
-          var replacedKey = key;
-          if ((key.startsWith('|') || key.startsWith('_')) && reverseTable[key]) replacedKey = reverseTable[key];
-          ret[replacedKey] = _this._decompressObj(obj[key]);
-        });
-        return ret;
-      }
+      var ret = {};
+      Object.keys(obj).forEach(function (key) {
+        var replacedKey = key;
+        if ((key.startsWith('|') || key.startsWith('_')) && reverseTable[key]) replacedKey = reverseTable[key];
+        ret[replacedKey] = _this._decompressObj(obj[key]);
+      });
+      return ret;
+    }
   };
 
   _proto.decompress = function decompress(obj) {

@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports._getValidator = _getValidator;
-exports["default"] = exports.hooks = exports.prototypes = exports.rxdb = void 0;
+exports.rxdb = exports.prototypes = exports.hooks = exports["default"] = void 0;
 
 var _ajv = _interopRequireDefault(require("ajv"));
 

@@ -5,18 +5,18 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.createOldCollection = createOldCollection;
+exports.DataMigrator = void 0;
 exports._getOldCollections = _getOldCollections;
-exports.mustMigrate = mustMigrate;
-exports.createDataMigrator = createDataMigrator;
+exports._migrateDocument = _migrateDocument;
 exports._runStrategyIfNotNull = _runStrategyIfNotNull;
+exports.createDataMigrator = createDataMigrator;
+exports.createOldCollection = createOldCollection;
+exports.deleteOldCollection = deleteOldCollection;
 exports.getBatchOfOldCollection = getBatchOfOldCollection;
 exports.migrateDocumentData = migrateDocumentData;
-exports._migrateDocument = _migrateDocument;
-exports.deleteOldCollection = deleteOldCollection;
 exports.migrateOldCollection = migrateOldCollection;
 exports.migratePromise = migratePromise;
-exports.DataMigrator = void 0;
+exports.mustMigrate = mustMigrate;
 
 var _pouchDb = require("./pouch-db");
 
@@ -47,9 +47,7 @@ var _rxCollectionHelper = require("./rx-collection-helper");
  * - This could have been done in much less code which would be easier to uderstand
  *
  */
-var DataMigrator =
-/*#__PURE__*/
-function () {
+var DataMigrator = /*#__PURE__*/function () {
   function DataMigrator(newestCollection, migrationStrategies) {
     this._migrated = false;
     this.newestCollection = newestCollection;

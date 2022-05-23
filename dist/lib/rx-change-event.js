@@ -5,11 +5,11 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.RxChangeEvent = void 0;
 exports.changeEventfromJSON = changeEventfromJSON;
 exports.changeEventfromPouchChange = changeEventfromPouchChange;
 exports.createChangeEvent = createChangeEvent;
 exports.isInstanceOf = isInstanceOf;
-exports.RxChangeEvent = void 0;
 
 var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));
 
@@ -19,9 +19,7 @@ var _util = require("./util");
  * RxChangeEvents a emitted when something in the database changes
  * they can be grabbed by the observables of database, collection and document
  */
-var RxChangeEvent =
-/*#__PURE__*/
-function () {
+var RxChangeEvent = /*#__PURE__*/function () {
   function RxChangeEvent(data) {
     this._hash = null;
     this.data = data;

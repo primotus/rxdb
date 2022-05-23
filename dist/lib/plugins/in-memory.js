@@ -5,12 +5,14 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.replicateExistingDocuments = replicateExistingDocuments;
-exports.setIndexes = setIndexes;
-exports.streamChangedDocuments = streamChangedDocuments;
+exports.InMemoryRxCollection = void 0;
 exports.applyChangedDocumentToPouch = applyChangedDocumentToPouch;
+exports.prototypes = exports.overwritable = exports["default"] = void 0;
+exports.replicateExistingDocuments = replicateExistingDocuments;
+exports.rxdb = void 0;
+exports.setIndexes = setIndexes;
 exports.spawnInMemory = spawnInMemory;
-exports["default"] = exports.overwritable = exports.prototypes = exports.rxdb = exports.InMemoryRxCollection = void 0;
+exports.streamChangedDocuments = streamChangedDocuments;
 
 var _assertThisInitialized2 = _interopRequireDefault(require("@babel/runtime/helpers/assertThisInitialized"));
 
@@ -56,9 +58,7 @@ var BULK_DOC_OPTIONS_FALSE = {
   new_edits: false
 };
 
-var InMemoryRxCollection =
-/*#__PURE__*/
-function (_RxCollectionBase) {
+var InMemoryRxCollection = /*#__PURE__*/function (_RxCollectionBase) {
   (0, _inheritsLoose2["default"])(InMemoryRxCollection, _RxCollectionBase);
 
   function InMemoryRxCollection(parentCollection) {
@@ -270,12 +270,12 @@ function replicateExistingDocuments(fromCollection, toCollection) {
     });
     if (docs.length === 0) return Promise.resolve([]); // nothing to replicate
     else {
-        return toCollection.pouch.bulkDocs({
-          docs: docs
-        }, BULK_DOC_OPTIONS_FALSE).then(function () {
-          return docs;
-        });
-      }
+      return toCollection.pouch.bulkDocs({
+        docs: docs
+      }, BULK_DOC_OPTIONS_FALSE).then(function () {
+        return docs;
+      });
+    }
   });
 }
 /**

@@ -5,10 +5,11 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.properties = properties;
+exports.RxCollectionBase = void 0;
 exports.create = create;
+exports["default"] = void 0;
 exports.isInstanceOf = isInstanceOf;
-exports["default"] = exports.RxCollectionBase = void 0;
+exports.properties = properties;
 
 var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));
 
@@ -50,9 +51,7 @@ var HOOKS_WHEN = ['pre', 'post'];
 var HOOKS_KEYS = ['insert', 'save', 'remove', 'create'];
 var hooksApplied = false;
 
-var RxCollectionBase =
-/*#__PURE__*/
-function () {
+var RxCollectionBase = /*#__PURE__*/function () {
   function RxCollectionBase(database, name, schema) {
     var pouchSettings = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
     var migrationStrategies = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : {};

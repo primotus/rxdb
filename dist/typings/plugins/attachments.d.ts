@@ -1,5 +1,5 @@
-/// <reference types="node" />
 /// <reference types="pouchdb-core" />
+/// <reference types="node" />
 import { RxDocument } from '../types';
 export declare const blobBufferUtil: {
     /**

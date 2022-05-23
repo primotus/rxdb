@@ -16,25 +16,21 @@ import { getPreviousVersions } from '../rx-schema';
  * @throws {Error}
  */
 
-export function checkFieldNameRegex(fieldName) {
-//   if (fieldName === '') return;
-//   if (fieldName === '_id') return;
-
-//   if (['properties', 'language'].includes(fieldName)) {
-//     throw newRxError('SC23', {
-//       fieldName: fieldName
-//     });
-//   }
-
-//   var regexStr = '^[a-zA-Z](?:[[a-zA-Z0-9_]*]?[a-zA-Z0-9])?$';
-//   var regex = new RegExp(regexStr);
-
-//   if (!fieldName.match(regex)) {
-//     throw newRxError('SC1', {
-//       regex: regexStr,
-//       fieldName: fieldName
-//     });
-//   }
+export function checkFieldNameRegex(fieldName) {// if (fieldName === '') return;
+  // if (fieldName === '_id') return;
+  // if (['properties', 'language'].includes(fieldName)) {
+  //     throw newRxError('SC23', {
+  //         fieldName
+  //     });
+  // }
+  // const regexStr = '^[a-zA-Z](?:[[a-zA-Z0-9_]*]?[a-zA-Z0-9])?$';
+  // const regex = new RegExp(regexStr);
+  // if (!fieldName.match(regex)) {
+  //     throw newRxError('SC1', {
+  //         regex: regexStr,
+  //         fieldName
+  //     });
+  // }
 }
 /**
  * validate that all schema-related things are ok
